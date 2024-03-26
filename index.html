@@ -149,7 +149,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose InNeRF360, an automatic system that accurately removes text-specified objects from 360-degree Neural Radiance Fields (NeRF). The challenge is to effectively remove objects while inpainting perceptually consistent content for the missing regions, which is particularly demanding for existing NeRF models due to their implicit volumetric representation. Moreover, unbounded scenes are more prone to floater artifacts in the inpainted region than frontal-facing scenes, as the change of object appearance and background across views is more sensitive to inaccurate segmentations and inconsistent inpainting. With a trained NeRF and a text description, our method efficiently removes specified objects and inpaints visually consistent content without artifacts. We apply depth-space warping to enforce consistency across multiview text-encoded segmentations, and then refine the inpainted NeRF model using perceptual priors and 3D diffusion-based geometric priors to ensure visual plausibility. Check our project page: https://github.com/IVRL/InNeRF360 for our experiments in segmentation and inpainting on 360-degree and frontal-facing NeRFs, which show that InNeRF360 is effective and enhances NeRF's editability.
+            We propose InNeRF360, an automatic system that accurately removes text-specified objects from 360-degree Neural Radiance Fields (NeRF). The challenge is to effectively remove objects while inpainting perceptually consistent content for the missing regions, which is particularly demanding for existing NeRF models due to their implicit volumetric representation. Moreover, unbounded scenes are more prone to floater artifacts in the inpainted region than frontal-facing scenes, as the change of object appearance and background across views is more sensitive to inaccurate segmentations and inconsistent inpainting. With a trained NeRF and a text description, our method efficiently removes specified objects and inpaints visually consistent content without artifacts. We apply depth-space warping to enforce consistency across multiview text-encoded segmentations, and then refine the inpainted NeRF model using perceptual priors and 3D diffusion-based geometric priors to ensure visual plausibility. Through extensive experiments in segmentation and inpainting on 360-degree and frontal-facing NeRFs, we show that InNeRF360 is effective and enhances NeRF's editability.
           </p>
         </div>
       </div>
@@ -216,50 +216,73 @@
 <!-- End youtube video -->
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Video Results</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+              <video poster="" id="video1" autoplay controls muted loop height="200%" style="display: block; margin: auto;">
+                <!-- Your video file here -->
+                <source src="static/videos/supp.mov"
+                type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
-            <!-- Your video file here -->
+
             <source src="static/videos/bear.mov"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
-            <!-- Your video file here -->
+
             <source src="static/videos/dozer.mov"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
-            <!-- Your video file here -->
+
             <source src="static/videos/pot.mov"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video4">
           <video poster="" id="video4" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
-            <!-- Your video file here -->
+
             <source src="static/videos/room.mov"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video5">
           <video poster="" id="video5" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
-            <!-- Your video file here -->
+
             <source src="static/videos/starbucks.mov"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video6">
           <video poster="" id="video6" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
-            <!-- Your video file here -->
+
             <source src="static/videos/vase.mov"
             type="video/mp4">
           </video>
@@ -267,7 +290,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
