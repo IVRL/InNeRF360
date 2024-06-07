@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields">
+  <meta property="og:title" content="InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields"/>
+  <meta property="og:description" content="InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360 degree Neural Radiance Fields"/>
+  <meta property="og:url" content="https://ivrl.github.io/InNeRF360/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields">
+  <meta name="twitter:description" content="InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="CVPR2024">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360 degree Neural Radiance Fields</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields</h1>
+            
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"> CVPR 2024
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"> <a href="https://dongqing-wang.com" target="_blank">Dongqing Wang, </a></span>
+              <span class="author-block"> <a href="https://people.epfl.ch/tong.zhang" target="_blank">Tong Zhang, </a></span>
+              <span class="author-block"> <a href="https://www.linkedin.com/in/alaa-abboud/" target="_blank">Alaa Abboud, </a></span>
+              <span class="author-block"> <a href="https://people.epfl.ch/sabine.susstrunk" target="_blank">Sabine Süsstrunk</a></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">School of Computer and Communication Sciences, EPFL, Switzerland </span>
+            </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2305.15094" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (Upon release of CVPR Proceedings)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supp.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/IVRL/InNeRF360/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2305.15094" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/banner.png" alt="teaser image" class="center"/>
+        <h2 class="subtitle has-text-centered">
+          InNeRF360 allows removing or editing of objects within an unbounded 360 degree NeRF through 2D image processing tools guided by 3D priors.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose InNeRF360, an automatic system that accurately removes text-specified objects from 360-degree Neural Radiance Fields (NeRF). The challenge is to effectively remove objects while inpainting perceptually consistent content for the missing regions, which is particularly demanding for existing NeRF models due to their implicit volumetric representation. Moreover, unbounded scenes are more prone to floater artifacts in the inpainted region than frontal-facing scenes, as the change of object appearance and background across views is more sensitive to inaccurate segmentations and inconsistent inpainting. With a trained NeRF and a text description, our method efficiently removes specified objects and inpaints visually consistent content without artifacts. We apply depth-space warping to enforce consistency across multiview text-encoded segmentations, and then refine the inpainted NeRF model using perceptual priors and 3D diffusion-based geometric priors to ensure visual plausibility. Through extensive experiments in segmentation and inpainting on 360-degree and frontal-facing NeRFs, we show that InNeRF360 is effective and enhances NeRF's editability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+<!--             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e_YE_vBZUQY?si=MT9qUDol-tQ33PrB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Video Results</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+              <video poster="" id="video1" autoplay controls muted loop height="200%" style="display: block; margin: auto;">
+                <source src="static/videos/supp.mov"
+                type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        <h3 class="title is-3">Method</h3>
+          <div class="content has-text-justified">
+            <p>
+              Overview of our model architecture. 
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="static/images/model_arch.png" alt="model arch"/>
+          </div>
+
+        <br/>
+
+        <h3 class="title is-3">Editing Example</h3>
+
+          <div class="content has-text-justified">
+            <p>
+              Comparsion with InstructNeRF2NeRF on accurate object editing.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="static/images/in2n.png" alt="edit"/>
+          </div>  
+          <br/>
+
+        </div>
+      </div>
+    </div>
+
+ 
+  </div>
+</section>
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
+
+            <source src="static/videos/bear.mov"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
+
+            <source src="static/videos/dozer.mov"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
+
+            <source src="static/videos/pot.mov"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
+
+            <source src="static/videos/room.mov"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
+
+            <source src="static/videos/starbucks.mov"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video6">
+          <video poster="" id="video6" autoplay controls muted loop height="100%" style="display: block; margin: auto;">
+
+            <source src="static/videos/vase.mov"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/images/poster.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @InProceedings{wang2024innerf360,
+          author={Wang, Dongqing and Zhang, Tong and Abboud, Alaa and S{\"u}sstrunk, Sabine},
+          title     = {{InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields}},
+          booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+          month     = {June},
+          year      = {2024}}
+           
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
